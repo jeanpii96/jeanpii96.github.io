@@ -15,4 +15,4 @@ NOTA: el ccs de los iconos ya esta incluido en dentro la carpeta del codigo y es
 LINK PARA COLORES DEGRADADOS:
 https://webgradients.com/
 --------------------------------------------------
-
+jesus chupalo 8===============D

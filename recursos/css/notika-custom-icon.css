@@ -10,7 +10,7 @@
 }
 
 .notika-icon {
-  /* use !important to prevent issues with browser extensions that change fonts */
+  /* use !important to prevent issues with browser extensions that change fonts */ /* icono alarma */
   font-family: 'notika-icon' !important;
   speak: none;
   font-style: normal;
@@ -18,6 +18,7 @@
   font-variant: normal;
   text-transform: none;
   line-height: 1;
+  margin-right: 30px; 
 
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;

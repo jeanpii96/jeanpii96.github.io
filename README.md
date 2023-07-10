@@ -2,7 +2,9 @@ La carpeta que se llama "SUPER CODIGO" es la que se usa para editar y hacer el c
 --------------------------------------------------
 --------------------------------------------------
 --------------------------------------------------
-LINK PARA GUIA DE LOS ICONOS: https://themewagon.github.io/Gradient-Able-free-bootstrap-admin-template/icon-themify.html
+LINK PARA GUIA DE LOS ICONOS: 
+
+https://themewagon.github.io/Gradient-Able-free-bootstrap-admin-template/icon-themify.html
 --------------------------------------------------
 NOTA: el ccs de los iconos ya esta incluido en dentro la carpeta del codigo y es:
 --------------------------------------------------
@@ -13,4 +15,4 @@ NOTA: el ccs de los iconos ya esta incluido en dentro la carpeta del codigo y es
 LINK PARA COLORES DEGRADADOS:
 https://webgradients.com/
 --------------------------------------------------
-
+jesus chupalo 8===============D

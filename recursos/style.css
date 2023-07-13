@@ -361,7 +361,7 @@ body {}
 .ntd-ctn {
 	position: absolute;
     top: 8px;
-    left: -8px;
+    left: 45px;
     font-size: 10px;
     background: #e46a76;
     height: 18px;

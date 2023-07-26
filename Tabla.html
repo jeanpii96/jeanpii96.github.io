@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- LIBRERIAS CSS -->
+    <link rel="stylesheet" href="recursos/css/bootstrap.min.css">
+    <link rel="stylesheet" href="recursos/css/meanmenu/meanmenu.min.css">
+    <link rel="stylesheet" href="recursos/css/animate.css">
+    <link rel="stylesheet" href="recursos/css/summernote/summernote.css">
+    <link rel="stylesheet" href="css/themesaller-forms.css">
+    <link rel="stylesheet" href="recursos/css/normalize.css">
+    <link rel="stylesheet" href="recursos/css/scrollbar/jquery.mCustomScrollbar.min.css">
+    <link rel="stylesheet" href="recursos/css/bootstrap-select/bootstrap-select.css">
+    <link rel="stylesheet" href="recursos/css/notification/notification.css">
+    <link rel="stylesheet" href="recursos/css/dropzone/dropzone.css">
+    <link rel="stylesheet" href="recursos/css/wave/waves.min.css">
+    <link rel="stylesheet" href="recursos/css/main.css">
+    <link rel="stylesheet" href="recursos/style.css">
+    <link rel="stylesheet" href="recursos/css/responsive.css">
+    <link rel="stylesheet" href="recursos/css/jquery.dataTables.min.css">
+    <!-- iconos-->
+    <link rel="stylesheet" type="text/css" href="recursos/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="css/notika-custom-icon.css">
+    <title>PROPUESTA</title>
+</head>
+
+<body>
+    <!-- CABECERA -->
+    <div class="header-top-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                    <div class="logo-area">
+                        <!-- LOGO DE EDC-->
+                        <a href="#"><img src="recursos/images/logo-edc.png" width="100" height="80" /></a>
+                    </div>
+                </div>
+                <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                    <div class="header-top-menu">
+                        <ul class="nav navbar-nav notika-top-nav">
+                            <!-- NOTIFICACION -->
+                            <li class="nav-item nc-al">
+                                <a href="#" data-toggle="dropdown" role="button" class="nav-link dropdown-toggle">
+                                    <span><i class="ti-bell"></i></span>
+                                </a>
+                                <div role="menu"
+                                    class="dropdown-menu message-dd notification-dd animated zoomIn nk-blue">
+                                    <div class="hd-mg-tt">
+                                        <center>
+                                            <h1>Notificaciones</h1>
+                                        </center>
+                                    </div>
+                                    <div class="hd-message-info">
+                                        <a href="#">
+                                            <div class="hd-message-sn">
+                                                <div class="hd-mg-ctn">
+                                                    <h3><i class="ti-clip"> Correlativo</i><small><b>Tipo de
+                                                                notification</b></small></h3>
+                                                    <h6>Realicado por...</h6>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a href="#">
+                                            <div class="hd-message-sn">
+                                                <div class="hd-mg-ctn">
+                                                    <h3><i class="ti-flag"> Correlativo</i><small><b>Tipo de
+                                                                notification</b></small></h3>
+                                                    <h6>Realicado por...</h6>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a href="#">
+                                            <div class="hd-message-sn">
+                                                <div class="hd-mg-ctn">
+                                                    <h3><i class="ti-flag"> Correlativo</i><small><b>Tipo de
+                                                                notification</b></small></h3>
+                                                    <h6>Realicado por...</h6>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a href="#">
+                                            <div class="hd-message-sn">
+                                                <div class="hd-mg-ctn">
+                                                    <h3><i class="ti-flag"> Correlativo</i><small><b>Tipo de
+                                                                notification</b></small></h3>
+                                                    <h6>Realicado por...</h6>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="hd-mg-va">
+                                        <a href="#">Ver Tabla de Correlativos</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <!-- OPCIONES DE PERFIL-->
+                            <li class="nav-item nc-al"><a href="#" data-toggle="dropdown" role="button"
+                                    aria-expanded="false" class="nav-link dropdown-toggle">
+                                    <div class="ntd-ctn"><span>2</span></div>
+                                    <span><i class="ti-menu"></i></span>
+                                    <div role="menu"
+                                        class="dropdown-menu message-dd notification-dd animated zoomIn nk-blue">
+                                        <div class="hd-message-info">
+                                            <a href="setup.html">
+                                                <div class="hd-message-sn">
+                                                    <div class="hd-mg-ctn">
+                                                        <h3><i class="ti-settings"> Configuración</i></h3>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <a href="ayuda.html">
+                                                <div class="hd-message-sn">
+                                                    <div class="hd-mg-ctn">
+                                                        <h3><i class="ti-help-alt"> Ayuda</i></h3>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <a href="index.html">
+                                                <div class="hd-message-sn">
+                                                    <div class="hd-mg-ctn">
+                                                        <h3><i class="ti-power-off"> Cerrar Sesion</i></h3>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Menu Telefono -->
+    <div class="mobile-menu-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="mobile-menu">
+                        <nav id="dropdown">
+                            <ul class="mobile-menu-nav">
+                                <li><a data-toggle="collapse" data-target="#Charts" href="#"><i class="ti-home">
+                                            INICIO</i></a>
+                                    <ul class="collapse dropdown-header-top">
+                                        <li><a href="#"><i class="ti-home"> INICIO</i></a></li>
+                                        <li><a href="#"><i class="ti-import"> MANUAL DE USUARIO</i></a></li>
+                                    </ul>
+                                </li>
+                                <li><a data-toggle="collapse" data-target="#demoevent" href="#"><i class="ti-signal">
+                                            Proyectos</i></a>
+                                    <ul id="demoevent" class="collapse dropdown-header-top">
+                                        <li><a href="Tabla.html"><i class="ti-clipboard"> TABLA</i></a></li>
+                                        <li><a href="crear_proyecto.html"><i class="ti-write"> NUEVO</i></a></li>
+                                        <li><a href="buscar_proyecto.html"><i class="ti-search"> BUSCAR</i></a></li>
+                                    </ul>
+                                </li>
+                                <li><a data-toggle="collapse" data-target="#democrou" href="#"><i class="ti-check-box">
+                                            Administrativo</i></a>
+                                    <ul id="democrou" class="collapse dropdown-header-top">
+                                        <li><a href="cronograma.html"><i class="ti-calendar"> CRONOGRAMA</i></a></li>
+                                        <li><a href="actividades.html"><i class="ti-agenda"> ACTIVIDADES</i></a></li>
+                                        <li><a href="evaluativo.html"><i class="ti-bar-chart-alt"> EVALUATIVO</i></a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><a data-toggle="collapse" data-target="#demolibra" href="#"><i class="ti-settings">
+                                            Configuración</i></a>
+                                    <ul id="demolibra" class="collapse dropdown-header-top">
+                                        <li><a href="setup.html"><i class="ti-settings"> CONFIGURACION</i></a></li>
+                                        <li><a href="perfil.html"><i class="ti-user"> EDITAR PERFIL</i></a></li>
+                                        <li><a href="ayuda.html"><i class="ti-help-alt"> AYUDA</i></a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Menu-->
+    <div class="main-menu-area mg-tb-40">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <ul class="nav nav-tabs notika-menu-wrap menu-it-icon-pro">
+                        <li>
+                            <a data-toggle="tab" href="#Home"><i class="ti-home"></i>Inicio</a>
+                        </li>
+                        <li class="active"><a data-toggle="tab" href="#mailbox"><i class="ti-signal"></i>Proyectos</a>
+                        </li>
+                        <li><a data-toggle="tab" href="#Interface"><i class="ti-check-box"></i>Administrativo</a>
+                        </li>
+                        <li><a data-toggle="tab" href="#Charts"><i class="ti-settings"></i>Configuración</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content custom-menu-content">
+                        <div id="Home" class="tab-pane in notika-tab-menu-bg animated flipInX">
+                            <ul class="notika-main-menu-dropdown">
+                                <li><a href="menu.html"><i class="ti-home"> INICIO</i></a>
+                                </li>
+                                <li><a href="#"><i class="ti-import"> MANUAL DE USUARIO</i></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div id="mailbox" class="tab-pane active notika-tab-menu-bg animated flipInX">
+                            <ul class="notika-main-menu-dropdown">
+                                <li><a href="Tabla.html"><i class="ti-clipboard"> TABLA</i></a>
+                                </li>
+                                <li><a href="crear_proyecto.html"><i class="ti-write"> NUEVO</i></a>
+                                </li>
+                                <li><a href="cronograma.html"><i class="ti-calendar"> CRONOGRAMA</i></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div id="Interface" class="tab-pane notika-tab-menu-bg animated flipInX">
+                            <ul class="notika-main-menu-dropdown">
+                                <li><a href="actividades.html"><i class="ti-agenda"> ACTIVIDADES</i></a>
+                                </li>
+                                <li><a href="evaluativo.html"><i class="ti-bar-chart-alt"> EVALUATIVO</i></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div id="Charts" class="tab-pane notika-tab-menu-bg animated flipInX">
+                            <ul class="notika-main-menu-dropdown">
+                                <li><a href="setup.html"><i class="ti-settings"> CONFIGURACION</i></a>
+                                </li>
+                                <li><a href="ayuda.html"><i class="ti-help-alt"> AYUDA</i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Seleccion para Tabla-->
+    <div class="form-element-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="form-element-list mg-t-30">
+                        <div class="row">
+                            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                                <div class="bootstrap-select fm-cmp-mg">
+                                    <select class="selectpicker" data-live-search="true">
+                                        <option disabled="disabled" selected>Previsualizar</option>
+                                        <option>TODOS</option>
+                                        <option>PENDIENTES</option>
+                                        <option>ASIGNADOS</option>
+                                        <option>EN ESPERA</option>
+                                        <option>OTROS</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- TABLA DE CORRELATIVOS -->
+    <div class="data-table-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="data-table-list">
+                        <div class="basic-tb-hd">
+                            <center></center>
+                            <h2>CORRELATIVOS</h2>
+                        </div>
+                        <div class="table-responsive">
+                            <table id="data-table-basic" class="table table-striped">
+                                <thead>
+                                    <tr>
+                                        <th>Correlativo</th>
+                                        <th>Tipo</th>
+                                        <th>Empresa</th>
+                                        <th>Proyecto</th>
+                                        <th>Punto A</th>
+                                        <th>Punto B</th>
+                                        <th>Estatus</th>
+                                        <th>Fecha Inicio</th>
+                                        <th>Asignado</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><a href="proyecto.html">GGOR-00001</a></td>
+                                        <td>VGTA</td>
+                                        <td>Fibex</td>
+                                        <td>Instalación de fibra óptica</td>
+                                        <td>Parque Central, Caracas, Dtto. Capital</td>
+                                        <td>Parque Miranda, Caracas, Dtto. Capital</td>
+                                        <td>Pendiente</td>
+                                        <td>03/08/2023</td>
+                                        <td>Regional</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="proyecto.html">GGOR-00002</a></td>
+                                        <td>VGTS</td>
+                                        <td>MDS Telecom</td>
+                                        <td>Instalación de fibra óptica</td>
+                                        <td>Parque Central, Caracas, Dtto. Capital</td>
+                                        <td>Parque Miranda, Caracas, Dtto. Capital</td>
+                                        <td>Inspección</td>
+                                        <td>03/07/2023</td>
+                                        <td>Regional</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="proyecto.html">GGOR-00003</a></td>
+                                        <td>Transpote de Datos</td>
+                                        <td>Net Uno</td>
+                                        <td>Solicitud 300MB</td>
+                                        <td>Parque Central, Caracas, Dtto. Capital</td>
+                                        <td>Parque Miranda, Caracas, Dtto. Capital</td>
+                                        <td>Inspección Logica</td>
+                                        <td>20/07/2023</td>
+                                        <td>Operaciones</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="proyecto.html">GGOR-00004</a></td>
+                                        <td>Banderolas</td>
+                                        <td>Net Uno</td>
+                                        <td>300 Banderolas Caracas</td>
+                                        <td>Parque Central, Caracas, Dtto. Capital</td>
+                                        <td>Parque Miranda, Caracas, Dtto. Capital</td>
+                                        <td>Inspección Logica</td>
+                                        <td>20/07/2023</td>
+                                        <td>Operaciones</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="proyecto.html">GGOR-00005</a></td>
+                                        <td>VGTA</td>
+                                        <td>Fibex</td>
+                                        <td>Instalación de fibra óptica</td>
+                                        <td>Parque Central, Caracas, Dtto. Capital</td>
+                                        <td>Parque Miranda, Caracas, Dtto. Capital</td>
+                                        <td>Pendiente</td>
+                                        <td>03/08/2023</td>
+                                        <td>Regional</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="proyecto.html">GGOR-00006</a></td>
+                                        <td>VGTS</td>
+                                        <td>MDS Telecom</td>
+                                        <td>Instalación de fibra óptica</td>
+                                        <td>Parque Central, Caracas, Dtto. Capital</td>
+                                        <td>Parque Miranda, Caracas, Dtto. Capital</td>
+                                        <td>Inspección</td>
+                                        <td>03/07/2023</td>
+                                        <td>Regional</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="proyecto.html">GGOR-00007</a></td>
+                                        <td>Transpote de Datos</td>
+                                        <td>Net Uno</td>
+                                        <td>Solicitud 300MB</td>
+                                        <td>Parque Central, Caracas, Dtto. Capital</td>
+                                        <td>Parque Miranda, Caracas, Dtto. Capital</td>
+                                        <td>Inspección Logica</td>
+                                        <td>20/07/2023</td>
+                                        <td>Operaciones</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="proyecto.html">GGOR-00008</a></td>
+                                        <td>Banderolas</td>
+                                        <td>Net Uno</td>
+                                        <td>300 Banderolas Caracas</td>
+                                        <td>Parque Central, Caracas, Dtto. Capital</td>
+                                        <td>Parque Miranda, Caracas, Dtto. Capital</td>
+                                        <td>Inspección Logica</td>
+                                        <td>20/07/2023</td>
+                                        <td>Operaciones</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="proyecto.html">GGOR-00009</a></td>
+                                        <td>VGTA</td>
+                                        <td>Fibex</td>
+                                        <td>Instalación de fibra óptica</td>
+                                        <td>Parque Central, Caracas, Dtto. Capital</td>
+                                        <td>Parque Miranda, Caracas, Dtto. Capital</td>
+                                        <td>Pendiente</td>
+                                        <td>03/08/2023</td>
+                                        <td>Regional</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="proyecto.html">GGOR-00010</a></td>
+                                        <td>VGTS</td>
+                                        <td>MDS Telecom</td>
+                                        <td>Instalación de fibra óptica</td>
+                                        <td>Parque Central, Caracas, Dtto. Capital</td>
+                                        <td>Parque Miranda, Caracas, Dtto. Capital</td>
+                                        <td>Inspección</td>
+                                        <td>03/07/2023</td>
+                                        <td>Regional</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="proyecto.html">GGOR-00011</a></td>
+                                        <td>Transpote de Datos</td>
+                                        <td>Net Uno</td>
+                                        <td>Solicitud 300MB</td>
+                                        <td>Parque Central, Caracas, Dtto. Capital</td>
+                                        <td>Parque Miranda, Caracas, Dtto. Capital</td>
+                                        <td>Inspección Logica</td>
+                                        <td>20/07/2023</td>
+                                        <td>Operaciones</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="proyecto.html">GGOR-00012</a></td>
+                                        <td>Banderolas</td>
+                                        <td>Net Uno</td>
+                                        <td>300 Banderolas Caracas</td>
+                                        <td>Parque Central, Caracas, Dtto. Capital</td>
+                                        <td>Parque Miranda, Caracas, Dtto. Capital</td>
+                                        <td>Inspección Logica</td>
+                                        <td>20/07/2023</td>
+                                        <td>Operaciones</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="proyecto.html">GGOR-00013</a></td>
+                                        <td>VGTA</td>
+                                        <td>Fibex</td>
+                                        <td>Instalación de fibra óptica</td>
+                                        <td>Parque Central, Caracas, Dtto. Capital</td>
+                                        <td>Parque Miranda, Caracas, Dtto. Capital</td>
+                                        <td>Pendiente</td>
+                                        <td>03/08/2023</td>
+                                        <td>Regional</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="proyecto.html">GGOR-00014</a></td>
+                                        <td>VGTS</td>
+                                        <td>MDS Telecom</td>
+                                        <td>Instalación de fibra óptica</td>
+                                        <td>Parque Central, Caracas, Dtto. Capital</td>
+                                        <td>Parque Miranda, Caracas, Dtto. Capital</td>
+                                        <td>Inspección</td>
+                                        <td>03/07/2023</td>
+                                        <td>Regional</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="proyecto.html">GGOR-00015</a></td>
+                                        <td>Transpote de Datos</td>
+                                        <td>Net Uno</td>
+                                        <td>Solicitud 300MB</td>
+                                        <td>Parque Central, Caracas, Dtto. Capital</td>
+                                        <td>Parque Miranda, Caracas, Dtto. Capital</td>
+                                        <td>Inspección Logica</td>
+                                        <td>20/07/2023</td>
+                                        <td>Operaciones</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="proyecto.html">GGOR-00016</a></td>
+                                        <td>Banderolas</td>
+                                        <td>Net Uno</td>
+                                        <td>300 Banderolas Caracas</td>
+                                        <td>Parque Central, Caracas, Dtto. Capital</td>
+                                        <td>Parque Miranda, Caracas, Dtto. Capital</td>
+                                        <td>Inspección Logica</td>
+                                        <td>20/07/2023</td>
+                                        <td>Operaciones</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="proyecto.html">GGOR-00017</a></td>
+                                        <td>VGTA</td>
+                                        <td>Fibex</td>
+                                        <td>Instalación de fibra óptica</td>
+                                        <td>Parque Central, Caracas, Dtto. Capital</td>
+                                        <td>Parque Miranda, Caracas, Dtto. Capital</td>
+                                        <td>Pendiente</td>
+                                        <td>03/08/2023</td>
+                                        <td>Regional</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="proyecto.html">GGOR-00018</a></td>
+                                        <td>VGTS</td>
+                                        <td>MDS Telecom</td>
+                                        <td>Instalación de fibra óptica</td>
+                                        <td>Parque Central, Caracas, Dtto. Capital</td>
+                                        <td>Parque Miranda, Caracas, Dtto. Capital</td>
+                                        <td>Inspección</td>
+                                        <td>03/07/2023</td>
+                                        <td>Regional</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="proyecto.html">GGOR-00019</a></td>
+                                        <td>Transpote de Datos</td>
+                                        <td>Net Uno</td>
+                                        <td>Solicitud 300MB</td>
+                                        <td>Parque Central, Caracas, Dtto. Capital</td>
+                                        <td>Parque Miranda, Caracas, Dtto. Capital</td>
+                                        <td>Inspección Logica</td>
+                                        <td>20/07/2023</td>
+                                        <td>Operaciones</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="proyecto.html">GGOR-00020</a></td>
+                                        <td>Banderolas</td>
+                                        <td>Net Uno</td>
+                                        <td>300 Banderolas Caracas</td>
+                                        <td>Parque Central, Caracas, Dtto. Capital</td>
+                                        <td>Parque Miranda, Caracas, Dtto. Capital</td>
+                                        <td>Inspección Logica</td>
+                                        <td>20/07/2023</td>
+                                        <td>Operaciones</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="proyecto.html">GGOR-00021</a></td>
+                                        <td>VGTA</td>
+                                        <td>Fibex</td>
+                                        <td>Instalación de fibra óptica</td>
+                                        <td>Parque Central, Caracas, Dtto. Capital</td>
+                                        <td>Parque Miranda, Caracas, Dtto. Capital</td>
+                                        <td>Pendiente</td>
+                                        <td>03/08/2023</td>
+                                        <td>Regional</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="proyecto.html">GGOR-00022</a></td>
+                                        <td>VGTS</td>
+                                        <td>MDS Telecom</td>
+                                        <td>Instalación de fibra óptica</td>
+                                        <td>Parque Central, Caracas, Dtto. Capital</td>
+                                        <td>Parque Miranda, Caracas, Dtto. Capital</td>
+                                        <td>Inspección</td>
+                                        <td>03/07/2023</td>
+                                        <td>Regional</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="proyecto.html">GGOR-00023</a></td>
+                                        <td>Transpote de Datos</td>
+                                        <td>Net Uno</td>
+                                        <td>Solicitud 300MB</td>
+                                        <td>Parque Central, Caracas, Dtto. Capital</td>
+                                        <td>Parque Miranda, Caracas, Dtto. Capital</td>
+                                        <td>Inspección Logica</td>
+                                        <td>20/07/2023</td>
+                                        <td>Operaciones</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="proyecto.html">GGOR-00024</a></td>
+                                        <td>Banderolas</td>
+                                        <td>Net Uno</td>
+                                        <td>300 Banderolas Caracas</td>
+                                        <td>Parque Central, Caracas, Dtto. Capital</td>
+                                        <td>Parque Miranda, Caracas, Dtto. Capital</td>
+                                        <td>Inspección Logica</td>
+                                        <td>20/07/2023</td>
+                                        <td>Operaciones</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Pie de Pagina-->
+    <div class="footer-copyright-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="footer-copy-right">
+                        <p>Copyright © 2023 . Derechos Reservados.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Librerias Js -->
+    <script src="recursos/js/vendor/jquery-1.12.4.min.js"></script>
+    <script src="recursos/js/bootstrap.min.js"></script>
+    <script src="recursos/js/wow.min.js"></script>
+    <script src="recursos/js/jquery-price-slider.js"></script>
+    <script src="recursos/js/owl.carousel.min.js"></script>
+    <script src="recursos/js/jquery.scrollUp.min.js"></script>
+    <script src="recursos/js/meanmenu/jquery.meanmenu.js"></script>
+    <script src="recursos/js/counterup/jquery.counterup.min.js"></script>
+    <script src="recursos/js/counterup/waypoints.min.js"></script>
+    <script src="recursos/js/counterup/counterup-active.js"></script>
+    <script src="recursos/js/scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="recursos/js/scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="recursos/js/flot/jquery.flot.js"></script>
+    <script src="recursos/js/flot/jquery.flot.resize.js"></script>
+    <script src="recursos/js/flot/flot-active.js"></script>
+    <script src="recursos/js/knob/jquery.knob.js"></script>
+    <script src="recursos/js/knob/jquery.appear.js"></script>
+    <script src="recursos/js/knob/knob-active.js"></script>
+    <script src="recursos/js/jasny-bootstrap.min.js"></script>
+    <script src="recursos/js/icheck/icheck.min.js"></script>
+    <script src="recursos/js/icheck/icheck-active.js"></script>
+    <script src="recursos/js/rangle-slider/jquery-ui-1.10.4.custom.min.js"></script>
+    <script src="recursos/js/rangle-slider/jquery-ui-touch-punch.min.js"></script>
+    <script src="recursos/js/rangle-slider/rangle-active.js"></script>
+    <script src="recursos/js/datapicker/bootstrap-datepicker.js"></script>
+    <script src="recursos/js/datapicker/datepicker-active.js"></script>
+    <script src="recursos/js/bootstrap-select/bootstrap-select.js"></script>
+    <script src="recursos/js/notification/bootstrap-growl.min.js"></script>
+    <script src="recursos/js/notification/notification-active.js"></script>
+    <script src="recursos/js/summernote/summernote-updated.min.js"></script>
+    <script src="recursos/js/summernote/summernote-active.js"></script>
+    <script src="recursos/js/dropzone/dropzone.js"></script>
+    <script src="recursos/js/wave/waves.min.js"></script>
+    <script src="recursos/js/wave/wave-active.js"></script>
+    <script src="recursos/js/chosen/chosen.jquery.js"></script>
+    <script src="recursos/js/todo/jquery.todo.js"></script>
+    <script src="recursos/js/plugins.js"></script>
+    <script src="recursos/js/main.js"></script>
+    <script src="recursos/js/dropzone/dropzone.js"></script>
+    <!-- Data Table JS -->
+    <script src="recursos/js/data-table/jquery.dataTables.min.js"></script>
+    <script src="recursos/js/data-table/data-table-act.js"></script>
+</body>
+</html>

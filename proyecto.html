@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
@@ -16,6 +17,7 @@
     <link rel="stylesheet" href="recursos/css/notification/notification.css">
     <link rel="stylesheet" href="recursos/css/dropzone/dropzone.css">
     <link rel="stylesheet" href="recursos/css/wave/waves.min.css">
+    <link rel="stylesheet" href="recursos/css/wave/button.css">
     <link rel="stylesheet" href="recursos/css/main.css">
     <link rel="stylesheet" href="recursos/style.css">
     <link rel="stylesheet" href="recursos/css/responsive.css">
@@ -139,26 +141,31 @@
                     <div class="mobile-menu">
                         <nav id="dropdown">
                             <ul class="mobile-menu-nav">
-                                <li><a data-toggle="collapse" data-target="#Charts" href="#"><i class="ti-home"> INICIO</i></a>
+                                <li><a data-toggle="collapse" data-target="#Charts" href="#"><i class="ti-home">
+                                            INICIO</i></a>
                                     <ul class="collapse dropdown-header-top">
                                         <li><a href="#"><i class="ti-home"> INICIO</i></a></li>
                                         <li><a href="#"><i class="ti-import"> MANUAL DE USUARIO</i></a></li>
                                     </ul>
                                 </li>
-                                <li><a data-toggle="collapse" data-target="#demoevent" href="#"><i class="ti-signal"> Proyectos</i></a>
+                                <li><a data-toggle="collapse" data-target="#demoevent" href="#"><i class="ti-signal">
+                                            Proyectos</i></a>
                                     <ul id="demoevent" class="collapse dropdown-header-top">
                                         <li><a href="Tabla.html"><i class="ti-clipboard"> TABLA</i></a></li>
                                         <li><a href="crear_proyecto.html"><i class="ti-write"> NUEVO</i></a></li>
                                         <li><a href="cronograma.html"><i class="ti-calendar"> CRONOGRAMA</i></a></li>
                                     </ul>
                                 </li>
-                                <li><a data-toggle="collapse" data-target="#democrou" href="#"><i class="ti-check-box"> Administrativo</i></a>
+                                <li><a data-toggle="collapse" data-target="#democrou" href="#"><i class="ti-check-box">
+                                            Administrativo</i></a>
                                     <ul id="democrou" class="collapse dropdown-header-top">
                                         <li><a href="actividades.html"><i class="ti-agenda"> ACTIVIDADES</i></a></li>
-                                        <li><a href="evaluativo.html"><i class="ti-bar-chart-alt"> EVALUATIVO</i></a></li>
+                                        <li><a href="evaluativo.html"><i class="ti-bar-chart-alt"> EVALUATIVO</i></a>
+                                        </li>
                                     </ul>
                                 </li>
-                                <li><a data-toggle="collapse" data-target="#demolibra" href="#"><i class="ti-settings"> Configuración</i></a>
+                                <li><a data-toggle="collapse" data-target="#demolibra" href="#"><i class="ti-settings">
+                                            Configuración</i></a>
                                     <ul id="demolibra" class="collapse dropdown-header-top">
                                         <li><a href="setup.html"><i class="ti-settings"> CONFIGURACION</i></a></li>
                                         <li><a href="perfil.html"><i class="ti-user"> EDITAR PERFIL</i></a></li>
@@ -178,10 +185,10 @@
             <div class="row">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                     <ul class="nav nav-tabs notika-menu-wrap menu-it-icon-pro">
-                        <li class="active">
+                        <li>
                             <a data-toggle="tab" href="#Home"><i class="ti-home"></i>Inicio</a>
                         </li>
-                        <li><a data-toggle="tab" href="#mailbox"><i class="ti-signal"></i>Proyectos</a>
+                        <li class="active"><a data-toggle="tab" href="#Proyectos"><i class="ti-signal"></i>Proyectos</a>
                         </li>
                         <li><a data-toggle="tab" href="#Interface"><i class="ti-check-box"></i>Administrativo</a>
                         </li>
@@ -189,7 +196,7 @@
                         </li>
                     </ul>
                     <div class="tab-content custom-menu-content">
-                        <div id="Home" class="tab-pane in active notika-tab-menu-bg animated flipInX">
+                        <div id="Home" class="tab-pane in notika-tab-menu-bg animated flipInX">
                             <ul class="notika-main-menu-dropdown">
                                 <li><a href="menu.html"><i class="ti-home"> INICIO</i></a>
                                 </li>
@@ -197,7 +204,7 @@
                                 </li>
                             </ul>
                         </div>
-                        <div id="mailbox" class="tab-pane notika-tab-menu-bg animated flipInX">
+                        <div id="Proyectos" class="tab-pane active notika-tab-menu-bg animated flipInX">
                             <ul class="notika-main-menu-dropdown">
                                 <li><a href="Tabla.html"><i class="ti-clipboard"> TABLA</i></a>
                                 </li>
@@ -219,6 +226,8 @@
                             <ul class="notika-main-menu-dropdown">
                                 <li><a href="setup.html"><i class="ti-settings"> CONFIGURACION</i></a>
                                 </li>
+                                <li><a href="perfil.html"><i class="ti-user"> EDITAR PERFIL</i></a>
+                                </li>
                                 <li><a href="ayuda.html"><i class="ti-help-alt"> AYUDA</i></a>
                                 </li>
                             </ul>
@@ -228,176 +237,203 @@
             </div>
         </div>
     </div>
-    <!-- TICKETS -->
-    <div class="notika-status-area">
+
+    <!-- Proyecto-->
+    <div class="inbox-area">
         <div class="container">
             <div class="row">
-                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
-                    <div class="wb-traffic-inner notika-shadow sm-res-mg-t-30 tb-res-mg-t-30">
-                        <div class="website-traffic-ctn">
-                            <div class="widget-signup-list">
-                                <h2><a class="signup-wd-mn" data-toggle="tooltip" data-placement="top" href="#">50</a>Pendientes</h2>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
-                    <div class="wb-traffic-inner notika-shadow sm-res-mg-t-30 tb-res-mg-t-30">
-                        <div class="website-traffic-ctn">
-                            <div class="widget-signup-list">
-                                <h2><a class="signup-wd-mn" data-toggle="tooltip" data-placement="top" href="#">20</a> Asignados</h2>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
-                    <div class="wb-traffic-inner notika-shadow sm-res-mg-t-30 tb-res-mg-t-30 dk-res-mg-t-30">
-                        <div class="website-traffic-ctn">
-                            <div class="widget-signup-list">
-                                <h2><a class="signup-wd-mn" data-toggle="tooltip" data-placement="top" href="#">8</a>Correlativos</h2>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
-                    <div class="wb-traffic-inner notika-shadow sm-res-mg-t-30 tb-res-mg-t-30 dk-res-mg-t-30">
-                        <div class="website-traffic-ctn">
-                            <div class="widget-signup-list">
-                                <h2><a class="signup-wd-mn" data-toggle="tooltip" data-placement="top" href="#">3</a> Otros Estatus</h2>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <br>
-    <!-- Pendientes -->
-    <div class="notika-email-post-area">
-        <div class="container">
-            <div class="row">
-                <!-- Inspecciones Pendientes -->
-                <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
-                    <div class="recent-items-wp notika-shadow sm-res-mg-t-30">
-                        <div class="rc-it-ltd">
-                            <div class="recent-items-ctn">
-                                <div class="recent-items-title">
-                                    <h2>Inspecciones Pendientes</h2>
+                <!-- Info de Proyecto-->
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                    <div class="inbox-left-sd">
+                        <ul class="inbox-st-nav inbox-ft">
+                            <!-- Correlativo y Estatus -->
+                            <div class="breadcomb-wp">
+                                <div class="breadcomb-ctn">
+                                    <div class="container-fluid">
+                                        <div class="row">
+                                            <div class="col-lg-6 col-md-3 col-sm-3 col-xs-12"><span
+                                                    class="label nk-blue"><b>GGOR-0001</b></span></div>
+                                            <div class="col-lg-6 col-md-3 col-sm-3 col-xs-12"><span
+                                                    class="label nk-blue">NUEVO</span></div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="recent-items-inn">
-                                <table class="table table-inner table-vmiddle">
-                                    <thead>
-                                        <tr>
-                                            <th>Correlativo</th>
-                                            <th>Cliente</th>
-                                            <th style="width: 60px">Fecha</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td class="f-500 c-cyan"><a href="proyecto.html">GGOR-00001</a></td>
-                                            <td>Corporacion Digitel</td>
-                                            <td class="f-500 c-cyan">20/07/23</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="f-500 c-cyan"><a href="proyecto.html">GGOR-00002</a></td>
-                                            <td>Corporacion Telemic</td>
-                                            <td class="f-500 c-cyan">20/07/23</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="f-500 c-cyan"><a href="proyecto.html">GGOR-00003</a></td>
-                                            <td>MDS Telecom</td>
-                                            <td class="f-500 c-cyan">21/07/23</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="f-500 c-cyan"><a href="proyecto.html">GGOR-00004</a></td>
-                                            <td>MDS Telecom</td>
-                                            <td class="f-500 c-cyan">21/07/23</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="f-500 c-cyan"><a href="proyecto.html">GGOR-00005</a></td>
-                                            <td>Net Uno</td>
-                                            <td class="f-500 c-cyan">21/07/23</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="f-500 c-cyan"><a href="proyecto.html">GGOR-00006</a></td>
-                                            <td>Corporacion Fibex</td>
-                                            <td class="f-500 c-cyan">21/07/23</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="f-500 c-cyan"><a href="proyecto.html">GGOR-00007</a></td>
-                                            <td>MDS Telecom</td>
-                                            <td class="f-500 c-cyan">22/07/23</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                                <div class="recent-post-signle">
-                                    <a href="#">
-                                        <div class="recent-post-flex rc-ps-vw">
-                                            <div class="recent-post-line rct-pt-mg">
-                                                <p>Ver Cronograma</p>
+                            <hr>
+                            <!-- Info de Proyecto -->
+                            <div class="inbox-status">
+                                <div class="form-group ic-cmp-int float-lb floating-lb">
+                                    <div class="nk-int-st">
+                                        <!-- Fecha de Creacion -->
+                                        <div class="realtime-ctn-st">
+                                            <span><b>Fecha: </b></span><span>20/07/2023</span>
+                                        </div>
+                                        <!-- Nombre de Empresa -->
+                                        <div class="realtime-ctn-st">
+                                            <span><b>Empresa: </b></span><span>Net Uno</span>
+                                        </div>
+                                        <!-- CONATEL -->
+                                        <div class="realtime-ctn-st">
+                                            <span><b>Habilitado: </b></span><span>SI</span>
+                                        </div>
+                                        <!-- Tipo de Proyecto -->
+                                        <div class="realtime-ctn-st">
+                                            <span><b>Proyecto: </b></span><span>VGT-Aerea</span>
+                                        </div>
+                                        <!-- Requerimiento -->
+                                        <div class="realtime-ctn-st">
+                                            <span><b>Requerimiento: </b></span><span>190 Postes</span>
+                                        </div>
+                                        <!-- Punto A -->
+                                        <div class="realtime-ctn-st">
+                                            <span><b>Punto A: </b></span><span>Plaza Vzla, Libertador, Dtto.
+                                                Capital</span>
+                                        </div>
+                                        <!-- Punto B -->
+                                        <div class="realtime-ctn-st">
+                                            <span><b>Punto B: </b></span><span>Chacaito, Chacao, Dtto. Capital</span>
+                                        </div>
+                                        <!-- Asignado -->
+                                        <div class="realtime-ctn-st">
+                                            <span><b>Asignado: </b></span><span>PROYECTOS - VGT-Aerea</span>
+                                        </div>
+                                        <!-- Responsable -->
+                                        <div class="realtime-ctn-st">
+                                            <span><b>Responsable: </b></span><span>Juan Perez</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Cargar Documentos -->
+                                <div class="modals-default-cl">
+                                    <hr>
+                                    <button type="button" class="btn notika-btn-lightblue btn-xs" data-toggle="modal"
+                                        data-target="#cargar"><i class="ti-upload">
+                                            Cargar Documentacion</i></button><br><br>
+                                    <div class="modal fade" id="cargar" role="dialog">
+                                        <div class="modal-dialog modal-sm">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <button type="button" class="close"
+                                                        data-dismiss="modal">&times;</button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <h2>Cargar Documentacion</h2>
+                                                    <p>Aqui se podra editar alguna documentacion de ser necesario, como el KMZ,
+                                                        AutoCad, la solicitud y La Memoeria Descriptiva, segun lo necesite el tipo de proyecto.</p>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-default"
+                                                        data-dismiss="modal">Guardar</button>
+                                                </div>
                                             </div>
                                         </div>
-                                    </a>
+                                    </div>
+                                </div>
+                                <!-- Descargar Documentos -->
+                                <div class="modals-default-cl">
+                                    <button type="button" class="btn notika-btn-blue btn-xs" data-toggle="modal"
+                                        data-target="#descargar"><i class="ti-download">
+                                            Descargar Documentos</i></button>
+                                    <hr>
+                                    <div class="modal fade" id="descargar" role="dialog">
+                                        <div class="modal-dialog modal-sm">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <button type="button" class="close"
+                                                        data-dismiss="modal">&times;</button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <h2>Descargar Documentos</h2>
+                                                    <p>Aqui se podra descargar o ver la Documentacion del proyecto. como el KMZ, AutoCad, la solicitud y La Memoeria Descriptiva, segun lo necesite el tipo de proyecto.</p>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-default" data-dismiss="modal">Dercargar</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
+                        </ul>
                     </div>
                 </div>
-                <!-- Actividades Pendientes -->
-                <div class="col-lg-8 col-md-6 col-sm-6 col-xs-12">
-                    <div class="recent-post-wrapper notika-shadow sm-res-mg-t-30 tb-res-ds-n dk-res-ds">
-                        <div class="recent-post-ctn">
-                            <div class="recent-post-title">
-                                <h2>Actividades Pendientes</h2>
-                            </div>
-                        </div>
-                        <div class="recent-items-inn">
+                <!-- Comentarios-->
+                <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
+                    <div class="inbox-text-list sm-res-mg-t-30">
+                        <div class="form-group">
+                            <form action="" autocomplete="off">
+                                <div class="nk-int-st search-input search-overt">
+                                    <input type="text" hidden>
+                                    <input type="text" class="form-control" placeholder="Comentario...">
+                                    <input type="file" class="form-control">
+                                    <button class="btn search-ib">Guardar</button>
+                                </div>
+                            </form>
+                        </div><br>
+                        <div class="table-responsive">
                             <table class="table table-inner table-vmiddle">
                                 <thead>
                                     <tr>
+                                        <th style="width: 120px">Resposable</th>
+                                        <th>Descripcion</th>
                                         <th style="width: 60px">Fecha</th>
-                                        <th style="width: 100px">Actividad</th>
-                                        <th>Descripcion de Actividad</th>
-                                        <th style="width: 80px">Asignado</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
+                                        <td>SISTEMA-WEB</td>
+                                        <td>Se crea Correlativo</td>
+                                        <td>20/07/23</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="f-500 c-cyan">Daniela Perez</td>
+                                        <td>Se revisa Documentacion y evalua proyecto</td>
+                                        <td class="f-500 c-cyan">20/07/23</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="f-500 c-cyan">Daniela Perez</td>
+                                        <td>Se envia solicitud de inspeccion al regional <a href="#"
+                                                class="pull-right"><i class="ti-bookmark-alt"></i></a></td>
+                                        <td class="f-500 c-cyan">21/07/23</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="f-500 c-cyan">Juan Perez</td>
+                                        <td>Se recibe solicitud de inspeccion y se agenda en cronograma</td>
+                                        <td class="f-500 c-cyan">21/07/23</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="f-500 c-cyan">Juan Perez</td>
+                                        <td>Se realiza inspeccion de 150 postes, quedan pendiente 40 postes</td>
+                                        <td class="f-500 c-cyan">23/07/23</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="f-500 c-cyan">Juan Perez</td>
+                                        <td>Se finaliza inspeccion, se envia informe.<a href="#" class="pull-right"><i
+                                                    class="ti-bookmark-alt"></i></a></td>
+                                        <td class="f-500 c-cyan">24/07/23</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="f-500 c-cyan">Daniela Perez</td>
+                                        <td>Se recibe informe de inspeccion y se envia carta de factibilidad a
+                                            comercial
+                                        </td>
+                                        <td class="f-500 c-cyan">24/07/23</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="f-500 c-cyan">Luis Gomez</td>
+                                        <td>Se recibe factibilidad del proyecto</td>
                                         <td class="f-500 c-cyan">25/07/23</td>
-                                        <td class="f-500 c-cyan">Mantenimiento</td>
-                                        <td>Realizar mantenimiento preventivo a la red de fibra óptica</td>
-                                        <td class="f-500 c-cyan">Transporte de Datos</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="f-500 c-cyan">25/07/23</td>
-                                        <td class="f-500 c-cyan">Inspección</td>
-                                        <td>Realizar inspección de fibra en conjunto con MDS Telecom</td>
-                                        <td class="f-500 c-cyan">VGT-Subterranea</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="f-500 c-cyan">26/07/23</td>
-                                        <td class="f-500 c-cyan">Instalación</td>
-                                        <td>Instalar nuevo Router Mikrotic en Convento</td>
-                                        <td class="f-500 c-cyan">COR Y Transporte de Datos</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="f-500 c-cyan">26/07/23</td>
-                                        <td class="f-500 c-cyan">Mantenimiento</td>
-                                        <td>Realizar mantenimiento preventivo a la red de camaras de la empresa</td>
-                                        <td class="f-500 c-cyan">Mantenimiento</td>
                                     </tr>
                                 </tbody>
                             </table>
-                            <div class="recent-post-signle">
-                                <a href="#">
-                                    <div class="recent-post-flex rc-ps-vw">
-                                        <div class="recent-post-line rct-pt-mg">
-                                            <p>Ver otras</p>
-                                        </div>
-                                    </div>
-                                </a>
+                            <div class="pagination-inbox">
+                                <ul class="wizard-nav-ac">
+                                    <li><a class="btn" href="#"><i class="ti-angle-left"></i></a></li>
+                                    <li class="active"><a class="btn" href="#">1</a></li>
+                                    <li><a class="btn" href="#">2</a></li>
+                                    <li><a class="btn" href="#">3</a></li>
+                                    <li><a class="btn" href="#"><i class="ti-angle-right"></i></a></li>
+                                </ul>
                             </div>
                         </div>
                     </div>
@@ -405,6 +441,7 @@
             </div>
         </div>
     </div>
+
     <!-- Pie de Pagina-->
     <div class="footer-copyright-area">
         <div class="container">
@@ -457,4 +494,5 @@
     <script src="recursos/js/plugins.js"></script>
     <script src="recursos/js/main.js"></script>
 </body>
+
 </html>

@@ -2404,7 +2404,7 @@ hr {
 	background:#ab8ce4;
 }
 .table-inbox .label-info{
-	background:#01c0c8;
+	background:#224fca;
 }
 .active-hook .btn-default{
 	font-size:14px;
@@ -3572,7 +3572,7 @@ textarea.auto-size {
 .login-content, .error-page-area{
     min-height:100vh;
     text-align:center;
-    background-color:#00c292;
+    background-image: linear-gradient(to right, #00c6fb 0%, #005bea 100%);
 }
 .login-content:before, .error-page-area:before{
     content:'';
